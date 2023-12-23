@@ -39,21 +39,21 @@ This is a detailed list of features with the corresponding code.
 
 4.1 [Homescreen](#homescreen)
 
-4.2 [Print Teams](#print_teams)
+4.2 [Print Teams](#print-teams)
 
-4.2 [Games this week](#games_this_week)
+4.2 [Games this week](#games-this-week)
 
-4.3 [Print a Round](#print_round)
+4.3 [Print a Round](#print-a-round)
 
-4.4 [Print Draw for a Team](#print_draw)
+4.4 [Print Draw for a Team](#print-draw-for-a-team)
 
-4.5 [Enter Results](#enter_results)
+4.5 [Enter Results](#enter-results)
 
-4.6 [Remove Results](#remove_results)
+4.6 [Remove Results](#remove-results)
 
-4.7 [View Results](#view_results)
+4.7 [View Results](#view-results)
 
-4.8 [Exit Screen](#exit_screen)
+4.8 [Exit Screen](#exit-screen)
 
  [Back to index](#index)
  ***
@@ -481,7 +481,7 @@ def print_round():
             print("Invalid input! Must be a number between 1 and 14")
 ```
 
-  [Back to index](#index)
+[Back to Features](#features)
  ***
 
 ## Print Draw for a Team
