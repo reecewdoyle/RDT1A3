@@ -8,8 +8,9 @@
 3. [Introduction](#introduction)
 4. [Installation](#installation)
 5. [Features](#features)
-6. [Resources](#resources)
-
+6. [Implementation Plan](#implementation_plan)
+7. [Resources](#resources)
+***
 
 ## Introduction
 
@@ -85,7 +86,7 @@ This is a detailed list of features with the corresponding code.
 
 4.8 [Exit Screen](#exit-screen)
 
- [Back to index](#index)
+[Back to index](#index)
  ***
 
 ## Homescreen
@@ -961,6 +962,127 @@ print("\n")
 text = pfg.print_figlet(text = "Thank You !\n\nL . M . P . L", font = "standard", colors = "red")
 
 ```
+
+ [Back to Features](#features)
+ ***
+
+
+## Implementation
+
+I used a Trello board to plan and implement my app features. 
+
+![Trello](docs/trello.png)
+
+I decided to start with 3 different User Stories that would inform the features I needed to build. 
+
+    User 1:
+    
+     As an Administrator of LMPL, I want a simple app that will store the entire season draw for our competition. I want a simple method of storing results in a CSV file that I can use to update the team ladder in excel.
+
+    User 2: 
+    
+    As a Player, I want a simple method to see where my team is playing for the season so I can effectively plan my week around where I need to be for the games.
+
+    User 3: 
+    
+    As a fan, I want to know which teams have made the cut, and be able to see quickly what games are being played for the Round, so I can see where I need to be to watch the games.
+
+The Features I decided to build were"
+
+    1. TEAMS:
+
+    Print out the Teams that have made the competition, displayed in team colours.
+
+    2. GAMES THIS WEEK: 
+    
+    See the games happening within the upcoming week.
+
+    3. ROUNDS: 
+    
+    See the games for any of the 14 round season.
+
+    4. TEAM DRAW: 
+    
+    All 14 rounds of games for a particular team.
+
+    5. ENTER GAME RESULTS: 
+    
+    Into a CSV file that is generated when one is not present. 
+
+    6. REMOVE RESULTS: 
+    
+    If a mistake is made while entering results, remove them based on the Game number (1-56). Removed results are put into a list, and the `results.csv` file is overwritten with a new file of the same name.
+
+    7. VIEW RESULTS IN TABLE: 
+    
+    Displays `results.csv` in a pretty table that is easy to read. 
+
+As I completed a feature, I moved it across in the KANBAN table. 
+
+The order I completed the features in ended up being different from the order I had planned. 
+
+I orginally intended to complete them in order 1 -7. However, with the widely varying complexity, I decided to tackle the easier features first. 
+
+The major change from my original implementation was that I decided to implement `7. VIEW RESULTS IN TABLE` feature in `5. ENTER GAME RESULTS` and `6. REMOVE RESULRS`. This greatly improved the performance of these features, as now the user could see what was happening in the `results.csv` file without having to memorise the `game_number` they were going to delete. It was right in front of them. And it only requird this single line of code:
+```python
+view_results()
+``` 
+***
+
+### Prioritising:
+
+The order I ended up attempted the features in was:
+
+    1. TEAMS:
+
+    Print out the Teams that have made the competition, displayed in team colours.
+
+    7. VIEW RESULTS IN TABLE: 
+    
+    Displays `results.csv` in a pretty table that is easy to read.
+
+    5. ENTER GAME RESULTS: 
+    
+    Into a CSV file that is generated when one is not present.
+
+     6. REMOVE RESULTS: 
+    
+    If a mistake is made while entering results, remove them based on the Game number (1-56). Removed results are put into a list, and the `results.csv` file is overwritten with a new file of the same name.
+
+    2. GAMES THIS WEEK: 
+    
+    See the games happening within the upcoming week.
+
+    3. ROUNDS: 
+    
+    See the games for any of the 14 round season.
+
+    4. TEAM DRAW: 
+    
+    All 14 rounds of games for a particular team.
+
+I think this was becuase features 5. and 6. were the most closely related to the features in out class demo todo list app. 
+
+
+Feature 5 ended up being BY FAR the hardest to implement due to the 5 layers of input from the user. 
+
+It also took a while to discover that the reason the simple `VIEW RESULTS` function kept breaking was the missing lines in the `results.csv` file. 
+
+### Timeline and deadlines: 
+
+As I've never built an app like this before, it was very difficult to determine how long it would take me to build out any of these features. I used the overall dealine of 24/12/23, 23:55 as my guide. With this in mind, I abandoned finding more sophistcated solutions where necessary to get the app out by the deadline. I feel that if this was a real product, I would be expected to (within reason) do what was required to get to a Minimum Viable Productout by the deadline. Updates, improvments, and interations could be informed by user experience feedback, as they probably should anyway. 
+
+***
+### What I would do differently:
+
+As I was building this app, I realised that the `lmpl.csv` file that was storing all of my season data wasn't the best way to go. If I was rebuilding this app from scratch, I would probably use a dictionary, or list, or some combination of the two methods, which would be much more efficient, DRY, and updatable as this app coupld become usable over multiple years. 
+***
+I had originally intended to make the entering of Home Teams and Away Teams work with a keypad functionality. However, it was well above my skillset and what I could accomplish within the deadline. So I opted for a simple workaround that would allow the user to just enter the mascot of the team manually. While this isn't ideal, it would still meet the goal, which is to get information into the `results.csv`....spelling mistakes and all...oh well.
+
+
+ [Back to Index](#index)
+ ***
+
 
 ## Resources
 
