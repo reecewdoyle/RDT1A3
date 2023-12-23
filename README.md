@@ -9,7 +9,6 @@
 4. [Features](#features)
 
 
-
 ## Introduction
 
 The Lake Macquarie Premier League App is designed to be used by an administrator of an amateur Football (Soccer) competition in Lake Macquarie, NSW, Australia. 
@@ -220,8 +219,8 @@ If you enter anything other than a number from 1 to 8, you will be pushed into t
         print("Invalid Input")
 ```
 
- [Back to index](#index)
- ***
+[Back to Features](#features)
+***
 
 ## Print Teams
 ![Print Teams](docs/feat1.png)
@@ -275,9 +274,8 @@ def print_teams():
 ```
 `print(*teams, sep="\n")` means that the teans print without quotation marks and are seperated vertically.
 
-
- [Back to index](#index)
- ***
+[Back to Features](#features)
+***
 ## Games this week
 ![Games this week](docs/feat2.png)
 
@@ -438,8 +436,8 @@ week_num_to_test = 10  # Change this to the desired week number
 print_this_round()
 ```
 
- [Back to index](#index)
- ***
+[Back to Features](#features)
+***
 
 ## Print a Round
 
@@ -581,8 +579,8 @@ if row[3] == team_draw or row[4] == team_draw:
 
 `Round 1, Belmont Bandits vs Boolaroo Bulldogs, Friday, 3/11/23, 18:00`
 
-  [Back to index](#index)
- ***
+[Back to Features](#features)
+***
 
 ## Enter Results
 
@@ -793,8 +791,8 @@ We then essentially repeat the process for the Away team. The code is the same, 
 
 The last piece of code writes each of the inputs stored in variables in the `results.csv` file.
 
-  [Back to index](#index)
- ***
+[Back to Features](#features)
+***
 
 ## Remove Results
 
@@ -863,7 +861,7 @@ The writer then rewrites a new `results.csv` file over the top of the existing f
 
 A game number other than a number in the `results.csv` will throw the `UnboundLocalError`.
 
-  [Back to index](#index)
+[Back to Features](#features)
  ***
 
 ## View Results
@@ -887,7 +885,7 @@ This one is very simple.
 
 Simple, but effective!
 
-  [Back to index](#index)
+ [Back to Features](#features)
  ***
 
 ## Exit Screen
@@ -934,5 +932,5 @@ text = pfg.print_figlet(text = "Thank You !\n\nL . M . P . L", font = "standard"
 
 ```
 
-  [Back to index](#index)
+ [Back to Features](#features)
  ***
