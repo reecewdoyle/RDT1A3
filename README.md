@@ -6,7 +6,9 @@
 1. [Github repository](https://github.com/reecewdoyle/T1A3)
 2. [Presentation](pass)
 3. [Introduction](#introduction)
-4. [Features](#features)
+4. [Installation](#installation)
+5. [Features](#features)
+6. [Resources](#resources)
 
 
 ## Introduction
@@ -31,9 +33,37 @@ To meet all of these user stories, I decided that their would need to be 8 featu
 6. Delete Results of a game
 7. View the current results in a table
 
+[Back to index](#index)
+***
 
- [Back to index](#index)
- ***
+## Installation
+
+This app comes with a bash scripts that will automatically:
+* Check for the right version of ```python```
+* Install ```python```
+* Lanuch a ```venv``` (virtual environment)
+
+and then insall all the required packages to run this program, which are as follows:
+
+```python
+colored==2.2.4
+DateTime==5.4
+prettytable==3.9.0
+pyfiglet==1.0.2
+pytz==2023.3.post1
+wcwidth==0.2.12
+zope.interface==6.1
+```
+
+Once the user has opened `terminal` and naviagted to the `root directory` of the app, they simply need to type this into the command line and the app will launch:
+
+```python
+./start_here.sh
+```
+This is a very simple app, and to the best of my knowledge will work on either Windows, Linux, or MacOs. It should run easily on most modern machines.  
+[Back to index](#index)
+***
+
 ## Features
 This is a detailed list of features with the corresponding code.
 
@@ -932,5 +962,21 @@ text = pfg.print_figlet(text = "Thank You !\n\nL . M . P . L", font = "standard"
 
 ```
 
- [Back to Features](#features)
+## Resources
+
+Other than the Ed resources and Discord server that all Coder Academy students have access to, I also used these various sites and videos to help be build this app:
+
+- [PEP8](https://peps.python.org/pep-0008/)
+- [PyFi](https://pypi.org)
+- [re](https://docs.python.org/3/library/re.html)
+- [how I worked out how to implement re](https://stackoverflow.com/questions/36500911/validation-rule-user-input-cannot-be-left-blank-python)
+- [pyfiglet](https://pypi.org/project/pyfiglet/#description) 
+- [pyfiglet guide](https://www.javatpoint.com/python-pyfiglet-module)
+- [colored](https://pypi.org/project/colored/)
+- [colored guide](https://dslackw.gitlab.io/colored/)
+- [datetime](https://docs.python.org/3/library/datetime.html)
+    - [This clip on how to use datetime](https://www.youtube.com/watch?v=-AlFiS74aQg&t=148s)
+    - [This clip for weeks](https://www.youtube.com/watch?v=XsDivI3Un7s&t=61s)
+
+ [Back to Index](#index)
  ***
