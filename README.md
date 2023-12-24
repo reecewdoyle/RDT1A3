@@ -1089,16 +1089,33 @@ I had originally intended to make the entering of Home Teams and Away Teams work
 Other than the Ed resources and Discord server that all Coder Academy students have access to, I also used these various sites and videos to help be build this app:
 
 - [PEP8](https://peps.python.org/pep-0008/)
+    - [PEP8 song](https://youtu.be/hgI0p1zf31k?si=ns--vHDXI1mvHpjL)
 - [PyFi](https://pypi.org)
 - [re](https://docs.python.org/3/library/re.html)
-- [how I worked out how to implement re](https://stackoverflow.com/questions/36500911/validation-rule-user-input-cannot-be-left-blank-python)
+    - [how I worked out how to implement re](https://stackoverflow.com/questions/36500911/validation-rule-user-input-cannot-be-left-blank-python)
 - [pyfiglet](https://pypi.org/project/pyfiglet/#description) 
-- [pyfiglet guide](https://www.javatpoint.com/python-pyfiglet-module)
+    - [pyfiglet guide](https://www.javatpoint.com/python-pyfiglet-module)
+    - [ASCII art with pyfiglet](https://www.youtube.com/shorts/A8BmtzoV2BE)
 - [colored](https://pypi.org/project/colored/)
-- [colored guide](https://dslackw.gitlab.io/colored/)
+    - [colored guide](https://dslackw.gitlab.io/colored/)
+- [isdigit](https://www.w3schools.com/python/ref_string_isdigit.asp)
+    - [isdigit video](https://www.youtube.com/watch?v=MudyWmDC4oM)
 - [datetime](https://docs.python.org/3/library/datetime.html)
     - [This clip on how to use datetime](https://www.youtube.com/watch?v=-AlFiS74aQg&t=148s)
     - [This clip for weeks](https://www.youtube.com/watch?v=XsDivI3Un7s&t=61s)
+- [CSV](https://docs.python.org/3/library/csv.html?highlight=csv)
+    - [CSV handling video (I watched this whole series)](https://www.youtube.com/watch?v=DgOT8DEFBoc&t=318s)
+- [bash scripts](https://linuxconfig.org/how-to-use-a-bash-script-to-run-your-python-scripts)
+    - [Bash scripts series](https://www.youtube.com/watch?v=SPwyp2NG-bE&t=391s)
+- [Enumerate](https://www.w3schools.com/python/ref_func_enumerate.asp)
+    - [Enumerate video](https://www.youtube.com/watch?v=uPT-LkYSP_o)
+- [prettytable](https://pypi.org/project/prettytable/)
+    - [prettytable video](https://www.youtube.com/watch?v=mN5TUeNCOMQ)
+- [Python lists](https://www.w3schools.com/python/python_lists.asp)
+    - [Index postions](https://www.youtube.com/watch?v=_zZcivsR3nQ)
+    - [More on lists](https://www.youtube.com/watch?v=p8kKTbg64-E)
+
+
 
  [Back to Index](#index)
  ***
